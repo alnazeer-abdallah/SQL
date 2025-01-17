@@ -21,5 +21,13 @@ Duplicate values were removed from all tables using their IDs. Age has been clas
 5.	North Americans are the dominant market for bike sales, with a 44% share, followed by Europe (31%) and the Pacific region (24%).
 
 ## Recommendation
-Based on the analysis, the company should prioritize targeting middle-aged customers who own cars and have children. This demographic has demonstrated a strong preference for bike purchases. Additionally, focusing on the North American market and individuals with professional occupations could yield significant results. These groups have shown a higher likelihood of purchasing bikes, making them valuable segments for the company to target.
+--========== Explore the data ===========--
 
+SELECT * FROM Pizzas;
+SELECT * FROM Pizza_types;
+SELECT * FROM Orders;
+SELECT * FROM Order_details;
+
+--========== Total Orders ===========--
+
+SELECT Count(DISTINCT(order_id)) AS Total_Orders FROM Orders;
